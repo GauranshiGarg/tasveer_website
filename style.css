@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: #000000;
+  color: #ffffff;
+  background-image: 
+    linear-gradient(135deg, rgba(0, 224, 199, 0.05) 0%, rgba(0, 0, 0, 0.8) 100%),
+    url('pictures/tasveer-logo.png');
+  background-repeat: no-repeat, repeat;
+  background-position: center, top left;
+  background-size: 400px auto, 100px auto;
+  background-attachment: fixed;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: rgba(0,0,0,0.8);
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 0 20px rgba(0, 224, 199, 0.2);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 40px;
+  width: 40px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 20px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #00e0c7;
+}
+
+.hero {
+  background: url('https://source.unsplash.com/random/1600x900?camera') center/cover no-repeat;
+  position: relative;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  color: #ffffff;
+}
+
+.hero h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  color: #dddddd;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #00e0c7;
+  color: #0d0d0d;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #00bfa5;
+}
+
+section {
+  padding: 60px 0;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', serif;
+  color: #00e0c7;
+  letter-spacing: 1px;
+}
+
+p, a, li {
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 5px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(0, 224, 199, 0.5);
+}
+
+.event-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.event-card {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+  color: #ffffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 224, 199, 0.3);
+}
+
+.event-card h4 {
+  color: #00e0c7;
+  margin-bottom: 10px;
+}
+
+.contact {
+  background: #111111;
+  text-align: center;
+}
+
+.contact a {
+  color: #00e0c7;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  color: #00bfa5;
+}
+
+footer {
+  background: #0b0b0b;
+  text-align: center;
+  padding: 10px 0;
+  color: #666666;
+}
